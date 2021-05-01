@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "889658009195",
+    "project_id": "kub-dorkar",
+    "storage_bucket": "kub-dorkar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889658009195:android:100efed3aab45e3d24732e",
+        "android_client_info": {
+          "package_name": "com.example.kub_dorkar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889658009195-3j3tsfl64tp5mb28m0d4el24clflp6on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0gdh5nC8YRwsrchjAsDBLoRvy2CwdAZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889658009195-3j3tsfl64tp5mb28m0d4el24clflp6on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

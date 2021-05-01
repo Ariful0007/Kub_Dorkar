@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setup_layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout1">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileToolBar">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Edit Profile"
+                            android:textSize="20sp"
+                            android:textColor="#FFF"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/profileName"
+                            android:layout_marginLeft="5dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/setup_button"
+                            android:src="@drawable/ic_check"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="20dp" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/off_white"
+            android:layout_below="@+id/relLayout1"
+            android:id="@+id/relLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+
+
+            <include layout="@layout/snippet_center_editprofile" />
+
+            <ProgressBar
+                android:id="@+id/setup_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
